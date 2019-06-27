@@ -1,0 +1,37 @@
+.container {
+  border: 3px solid #39df71;
+  height: 50vh;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.item {
+  background-color: #393d3f;
+  border: 3px solid #62929e;
+  color: #e6e6e8;
+  font-size: 40px;
+  margin: 5px;
+}
+
+/* flexbox begins here  */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  /* default value is flex-start*/
+  justify-content: flex-start;
+  align-items: stretch;
+  /* align-items: baseline; */
+  /* align-items: stretch; (default) */
+}
+
+.item {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .item-large {
+  font-size: 54px;
+} */
