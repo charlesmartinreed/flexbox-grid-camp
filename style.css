@@ -1,3 +1,21 @@
+/* universal styling */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
 .container {
   /* border: 3px solid #39df71; */
   height: 50vh;
@@ -35,9 +53,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 25%;
-  height: 25%;
-  flex-basis: 1 1 25%;
+  width: 33%;
+  height: 100px;
+  /* flex-basis: 1 1 25%; */
   /* align-self: center; */
 }
 
@@ -63,4 +81,41 @@
   /* when resizing this is 1/2 as big as the other children*/
   /* flex-shrink: 2; */
   /* flex: 2 1 30px; */
+}
+
+/* NAV STYLING */
+
+nav {
+  width: 100%;
+  padding: 0px 10px 0 30px;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 1.9rem;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
