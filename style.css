@@ -1,16 +1,15 @@
 .container {
-  border: 3px solid #39df71;
+  /* border: 3px solid #39df71; */
   height: 50vh;
-  width: 80%;
+  width: 50%;
   margin: 0 auto;
 }
 
 .item {
   background-color: #393d3f;
-  border: 3px solid #62929e;
+  border: 3px solid rgba(0, 0, 0, 0);
   color: #e6e6e8;
   font-size: 40px;
-  margin: 5px;
 }
 
 /* flexbox begins here  */
@@ -18,20 +17,50 @@
 .container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
   /* default value is flex-start*/
-  justify-content: flex-start;
-  align-items: stretch;
+  /* justify-content: flex-start; */
+  /* align-items: stretch; */
   /* align-items: baseline; */
   /* align-items: stretch; (default) */
+  /* flex-wrap: wrap-reverse; */
+  /* flex-flow: nowrap; */
+  /* align-content: flex-start; */
 }
 
 .item {
-  width: 10%;
+  /* width: 80px; */
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 25%;
+  height: 25%;
+  flex-basis: 1 1 25%;
+  /* align-self: center; */
 }
 
-/* .item-large {
-  font-size: 54px;
-} */
+.item:nth-child(1),
+.item:nth-child(5),
+.item:nth-child(9) {
+  background-color: #333;
+}
+.item:nth-child(3),
+.item:nth-child(4),
+.item:nth-child(8) {
+  background-color: purple;
+}
+.item:nth-child(2),
+.item:nth-child(6),
+.item:nth-child(7) {
+  background-color: blue;
+}
+
+/* notice that we can align items individually and independently */
+.item-3 {
+  /* align-self: flex-end; */
+  /* when resizing this is 1/2 as big as the other children*/
+  /* flex-shrink: 2; */
+  /* flex: 2 1 30px; */
+}
