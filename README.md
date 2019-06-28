@@ -57,6 +57,7 @@
 - **grid-column-gap**, **grid-row-gap**, **grid-gap** (on main and cross axis)
 - the gaps are _not_ are a measure of the distance between track items, but rathe the size of the gaps (gutters) themselves
 - layouts can also be specified according according to the grid-lines with the **grid-column-start** and **grid-column-end** syntax
+- there are also negative grid lines, which go from right to left on the main axis and bottom to top on the cross axis
 
 # Fractional units
 
