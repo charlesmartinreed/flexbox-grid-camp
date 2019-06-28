@@ -38,3 +38,13 @@
 [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 ### CSS Grid
+
+- A two dimensional grid based layout system
+- Whereas flexbox was row or column (1D), CSS Grid allows you to set rows OR colums, all _within the same container_
+
+# CSS Grid parent properties
+
+- display: grid
+- **grid-template-columns:** set column size and number of columns. _this is called the track list_
+- **grid-template-rows:** set row size and number of row. _this is called the track list_
+- using the 'auto' value in the track list, column or row, allows the element to resize according to the available space
