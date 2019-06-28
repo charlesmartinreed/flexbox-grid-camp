@@ -59,6 +59,18 @@
 - layouts can also be specified according according to the grid-lines with the **grid-column-start** and **grid-column-end** syntax
 - there are also negative grid lines, which go from right to left on the main axis and bottom to top on the cross axis
 
+# grid-template-areas
+
+- number of named columns/rows designates number of columns/rows in grid
+- grid-template-areas:
+  "first first"
+  "second third"
+  "fourth fourth"
+- then you simply specify the grid item that corresponds to the named row/column
+  .item-1 {
+  grid-area: first;
+  }
+
 # Fractional units
 
 - CSS Grid introduces fr, which behaves similarly to auto but allows for equal proportions of track items
@@ -74,6 +86,7 @@
 
 - _auto-fill_ will make each item a certain size, wrap items when no more room is left
 - _auto-fit_ will tell the browser to automatically fill the grid with columsn when room is available
+- auto-fill fits the items within the container using min value, whereas auto-fit fills the container by stretching items out to their max value
 
 ### Implicit grid
 
