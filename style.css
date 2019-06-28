@@ -13,6 +13,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 15px;
+  margin-bottom: 60px;
 }
 
 .header-section a {
@@ -42,6 +43,41 @@ header {
   min-width: 100px;
   padding-left: 10px;
   flex-grow: 2;
+}
+
+/* GRID STYLING */
+.mock-image {
+  background: orange;
+  height: 160px;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.shot-name {
+  margin: 5px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  min-width: 90%;
+  max-width: 95%;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 530px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    justify-content: center;
+    min-width: 80%;
+  }
 }
 
 @media (max-width: 960px) {
